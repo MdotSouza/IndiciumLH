@@ -21,3 +21,8 @@ def treino_trat():
 def teste_trat():
 	testLimpo = os.getcwd() + caminho() + 'cars_test_clean.csv'
 	return pd.read_csv(testLimpo,sep="\t",encoding='UTF-16')
+
+def codigos():
+	cod = os.getcwd() + caminho() + 'codificacao.json'
+	return pd.read_json(cod, typ= 'series')
+
