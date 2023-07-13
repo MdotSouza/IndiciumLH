@@ -14,10 +14,10 @@ def teste():
 	test = os.getcwd() + caminho() + 'cars_test.csv'
 	return pd.read_csv(test,sep="\t",encoding='UTF-16')
 
-def treinoLimpo():
+def treino_trat():
 	treino = os.getcwd() + caminho() + 'cars_train_clean.csv'
 	return pd.read_csv(treino,sep="\t",encoding='UTF-16') 	
 
-def testeLimpo():
+def teste_trat():
 	testLimpo = os.getcwd() + caminho() + 'cars_test_clean.csv'
 	return pd.read_csv(testLimpo,sep="\t",encoding='UTF-16')
